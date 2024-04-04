@@ -19,7 +19,7 @@
                 </a> 
             </td>
             <td align="center">
-          <a href="https://github.com/inamprograms">
+          <a href="https://www.linkedin.com/in/monique-h-82b2722/">
                     <img src="https://media.licdn.com/dms/image/D5603AQElz0Eo_i1TJA/profile-displayphoto-shrink_200_200/0/1694144935017?e=1717632000&v=beta&t=sRdaqwm5j-jyYxAhLW0ADUC9HT58E5ieCi-_C5s2taM" width="100px;" alt="Monique Howard "/>
                     <br />
                     <sub><b>Monique Howard </b></sub>
@@ -33,17 +33,10 @@
                 </a> 
             </td>
           <td align="center">
-                <a href="https://github.com/hassangulzar1">
-                    <img src="https://avatars.githubusercontent.com/u/122821437?v=4" width="100px;" alt="M.Hassan Gulzar"/>
+                <a href="https://github.com/Kiran-shazadi">
+                    <img src="https://media.licdn.com/dms/image/D4E03AQHhx3xpDMUUzQ/profile-displayphoto-shrink_800_800/0/1698032502750?e=1717632000&v=beta&t=t5Fs_PIzyyq3E8xkJjNKyj46-UDn-wVflnV3Ox6erjw" width="100px;" alt="Kiran Shahzadi"/>
                     <br />
-                    <sub><b>M.Hassan Gulzar</b></sub>
-                </a> 
-            </td>
-          <td align="center">
-                <a href="https://www.linkedin.com/in/faraz-shoaib-55368a19a/">
-                    <img src="https://media.licdn.com/dms/image/D4D03AQG1YwVWmMkliA/profile-displayphoto-shrink_800_800/0/1692440912773?e=1714003200&v=beta&t=xESCKOMkZFfGRQa1_MZgItNYk7BTpmURdxx3TNDn7SQ" width="100px;" alt="Faraz Shoaib "/>
-                    <br />
-                    <sub><b>Faraz Shoaib </b></sub>
+                    <sub><b>Kiran Shahzadi</b></sub>
                 </a> 
             </td>
         </tr> 
