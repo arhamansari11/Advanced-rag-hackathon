@@ -13,7 +13,7 @@
             </td>
             <td align="center">
                 <a href="https://github.com/ArefHam">
-                    <img src="https://media.licdn.com/dms/image/C4D03AQEwHfmm0YgsAg/profile-displayphoto-shrink_200_200/0/1615415564176?e=1717632000&v=beta&t=1cpduSOL7k4dgM1gye1HKmZmTPSID72_6EFmky0Vnec" alt="Aref Hammadi"/>
+                    <img src="https://media.licdn.com/dms/image/C4D03AQEwHfmm0YgsAg/profile-displayphoto-shrink_200_200/0/1615415564176?e=1717632000&v=beta&t=1cpduSOL7k4dgM1gye1HKmZmTPSID72_6EFmky0Vnec" width="100px;" alt="Aref Hammadi"/>
                     <br />
                     <sub><b>Aref Hammadi</b></sub>
                 </a> 
