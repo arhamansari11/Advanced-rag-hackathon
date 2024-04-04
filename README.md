@@ -5,31 +5,31 @@
     <tbody>
         <tr>
             <td align="center">
-                <a href="https://github.com/Ahmadjajja">
-                    <img src="https://avatars.githubusercontent.com/u/86593662?v=4" width="100px;" alt="Ahmad Jajja"/>
+                <a href="https://github.com/arhamansari11">
+                    <img src="https://avatars.githubusercontent.com/u/124850772?v=4" width="100px;" alt="Muhammad Arham"/>
                     <br />
-                    <sub><b>Ahmad Jajja</b></sub>
+                    <sub><b>Muhammad Arham</b></sub>
                 </a> 
             </td>
             <td align="center">
-                <a href="https://www.linkedin.com/in/pariphat-sinma/">
-                    <img src="https://media.licdn.com/dms/image/D5603AQGXrNIgaMfevg/profile-displayphoto-shrink_800_800/0/1706634185940?e=1714003200&v=beta&t=zxuF6Pm854y-c8ZSMPw14XDxIenoN8oby1-ODYBx1-U" width="100px;" alt="Pariphat Sinma"/>
+                <a href="https://github.com/ArefHam">
+                    <img src="https://avatars.githubusercontent.com/u/56312801?v=4" alt="Aref Hammadi"/>
                     <br />
-                    <sub><b>Pariphat Sinma</b></sub>
+                    <sub><b>Aref Hammadi</b></sub>
                 </a> 
             </td>
             <td align="center">
           <a href="https://github.com/inamprograms">
-                    <img src="https://avatars.githubusercontent.com/u/113470083?v=4" width="100px;" alt="Inam Ul Rehman"/>
+                    <img src="https://media.licdn.com/dms/image/D5603AQElz0Eo_i1TJA/profile-displayphoto-shrink_200_200/0/1694144935017?e=1717632000&v=beta&t=sRdaqwm5j-jyYxAhLW0ADUC9HT58E5ieCi-_C5s2taM" width="100px;" alt="Monique Howard "/>
                     <br />
-                    <sub><b>Inam Ul Rehman</b></sub>
+                    <sub><b>Monique Howard </b></sub>
                 </a> 
             </td>
           <td align="center">
-                <a href="https://github.com/Hassamaziz">
-                    <img src="https://avatars.githubusercontent.com/u/118983911?v=4" width="100px;" alt="Hassam Aziz"/>
+                <a href="https://github.com/ChiromboKenT">
+                    <img src="https://avatars.githubusercontent.com/u/57112312?v=4" width="100px;" alt="Kenny Chirombo"/>
                     <br />
-                    <sub><b>Hassam Aziz</b></sub>
+                    <sub><b>Kenny Chirombo</b></sub>
                 </a> 
             </td>
           <td align="center">
