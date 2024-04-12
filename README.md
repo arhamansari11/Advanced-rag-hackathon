@@ -44,13 +44,13 @@
 <table>
 
 ## Summary:
-This repository contains the codebase for a social assistant app tailored to empower young adults diagnosed with neurological disabilities, such as Autism and ADHD, in navigating social interactions and daily life tasks. The app offers various features aimed at enhancing life skills and communication abilities through simulated scenarios and personalized guidance.
+This repository contains the codebase for A digital health assistant that helps young adults diagnosed with neurological disabilities, such as Autism and ADHD, prepare for social encounters when seeking health services. The goal of this application is to help these patient increase their independence, health outcomes, and overall quality of life.
 
 ## Key Features:
-1. **Interactive Task Creation:** Users can utilize the chat interface to add tasks to their schedule, such as doctor visits and shopping trips. The chatbot assists users in creating tasks by presenting a checklist and saving their responses for future reference.
+1. **Interactive Task Creation:** Users can engage with our chat interface to add task to their schedule such as visiting the doctor and picking up a prescription. The chatbot guides the user through task creation using a checklist. Their responses are saved and appended to their tasks.
    
-2. **Conversation Practice Modules:** The app includes a voice feature enabling users to practice oral communication skills through interaction using spoken language. This module encompasses scenarios for scheduling appointments, grocery shopping, ordering at restaurants, and more.
+2. **Conversation Practice Modules:** A voice feature allows users to practice oral communication skills by interacting with the app using spoken language. This module includes scenarios for scheduling appointments, checking in at the doctor’s office, attending a virtual visit, and more..
 
 3. **Scenario-Based Learning:** Users can access a wide array of videos and interactive exercises aimed at helping them develop practical skills for independently navigating everyday situations.
 
-4. **Domain-Specific Personalization:** Leveraging machine learning techniques like Retrieval-Augmented Generation (RAG), the app offers improved information retrieval and natural language generation, ensuring more accurate and personalized assistance.
+4. **Domain-Specific Personalization:** Leveraging machine learning techniques like Retrieval-Augmented Generation (RAG), the app offers improved information retrieval and neuro-sensitive natural language generation, ensuring more accurate and personalized assistance.
