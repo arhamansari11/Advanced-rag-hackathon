@@ -39,6 +39,13 @@
                     <sub><b>Kiran Shahzadi</b></sub>
                 </a> 
             </td>
+          <td align="center">
+                <a href="https://github.com/MazenMamdouh371">
+                    <img src="https://avatars.githubusercontent.com/u/87504568?v=4" width="100px;" alt="Kiran Shahzadi"/>
+                    <br />
+                    <sub><b>Mazen Mamdouh</b></sub>
+                </a> 
+            </td>
         </tr> 
 </tbody>
 <table>
