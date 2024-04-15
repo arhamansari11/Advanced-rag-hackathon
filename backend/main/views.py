@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.models import User
 from django.contrib import messages
 from .forms import *
 
@@ -11,35 +12,31 @@ def index(request):
 
 def login_view(request):
     if request.method == "POST":
-        form = LoginForm(request.POST)
-        if form.is_valid():
-            user = authenticate(request, username=form.cleaned_data.get("username"), password=form.cleaned_data.get("password")) # Get the user
-            if user:
-                login(request, user)
-                return redirect("index") # TODO: Make sure this is the correct name for the homepage url
-            else:
-                messages.error(request, "Username or Password is incorrect")
+        username = request.POST["username"]
+        password = request.POST["password"]
+        user = authenticate(request, username=username, password=password) # Get the user
+        if user:
+            login(request, user)
+            return JsonResponse({"message": "User logged in successfully", "success": True})
         else:
-            messages.error(request, "The form credentials are invalid")
+            return JsonResponse({"message": "No user found with the provided credentials", "success": False})
     else:
-        form = LoginForm()
-    return render(request, "pages/login.html", {'form': form}) # TODO: Replace with the actual page from react
+        return JsonResponse({"message": "Error 405 (Wrong Method, use POST)", "success": False})
+
+def check_auth(request):
+    if request.user.is_authenticated:
+        return JsonResponse({'isAuthenticated': True})
+    else:
+        return JsonResponse({'isAuthenticated': False})
 
 def signup(request):
     if request.method == "POST":
-        form = UserProfileCreationForm(request.POST) # Gets the form filled with the data from the POST request
-        if form.is_valid():
-            form.save() # Creates the user (default django user, not our custom one)
-            form_data = form.cleaned_data
-            user = authenticate(request, username=form_data.get("username"), password=form_data.get("password1")) #Gets the user created by the password and username
-            del form_data['username'], form_data['password1'], form_data['password2']
-            userProfile = UserProfile.objects.create(user=user, **form_data) # Create a UserProfile instance associated with the user model we just created
-            login(request, user)
-            return redirect("index") # TODO: Make sure this is the correct name for the homepage url
-        else:
-            messages.error(request, "The form information is invalid")
+        username = request.POST["username"]
+        password = request.POST["password1"]
+        user = User.objects.create(username=username, password=password)
+        login(request, user)
+        userProfile = UserProfile.objects.create(user=user, email=request.POST["email"], first_name=request.POST["first_name"], last_name=request.POST["last_name"]) # Create a UserProfile instance associated with the user model we just created
+        return JsonResponse({"success": True})
             
     else:
-        form = UserProfileCreationForm()
-
-    return render(request, "pages/signup.html", {'form': form}) # TODO: Replace with the actual page from react
+        return JsonResponse({"message": "Error 405 (Wrong Method, use POST)", "success": False})
