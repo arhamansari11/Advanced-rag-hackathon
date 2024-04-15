@@ -1,18 +1,12 @@
-import { Button } from "@/components/ui/button"
-import './App.css'
-
+import React from "react";
+import Routing from "./routing/Routing.jsx";
 
 function App() {
-
   return (
     <>
-      <div>
-        <Button>
-          Hello From Shadcn
-        </Button>
-      </div>
+      <Routing />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
