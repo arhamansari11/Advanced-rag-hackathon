@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Profile2 = () => {
   return (
@@ -31,14 +32,6 @@ const Profile2 = () => {
             </h1>
             <div className="col-lg-4 col-md-6 col-sm-7 col-11">
               <form>
-                <div className="mb-3">
-                  <label className="form-label">Name:</label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    placeholder="Enter your Name:"
-                  />
-                </div>
                 <div className="mb-3">
                   <label className="form-label">Phone</label>
                   <input
@@ -79,22 +72,27 @@ const Profile2 = () => {
                   />
                 </div>
                 <div className="mb-3">
-                  <label className="form-label">Phone</label>
+                  <label className="form-label">Health Insurance Company</label>
                   <input
                     type="password"
                     className="form-control"
-                    placeholder="Enter your Phone:"
-                  />
-                </div>
-                <div className="mb-3">
-                  <label className="form-label">RelationShip</label>
-                  <input
-                    type="password"
-                    className="form-control"
-                    placeholder="Enter your RelationShip:"
+                    placeholder="Enter your Health Insurance Company:"
                   />
                 </div>
               </form>
+              <div className="text-center"> {/* Changed here */}
+                <Link to="/profile1">
+                  <button className="btn btn-primary mb-2">
+                    Previous Page
+                  </button>
+                </Link>
+                <br />
+                <Link to="/profile3">
+                  <button className="btn btn-primary mb-2 ml-2">
+                    Next Page
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
