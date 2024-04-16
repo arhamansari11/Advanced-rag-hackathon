@@ -1,6 +1,7 @@
 # Social Assistant for Neurodivergent Young Adults
 
 ## Our Team
+
 <table>
     <tbody>
         <tr>
@@ -51,13 +52,36 @@
 <table>
 
 ## Summary:
+
 This repository contains the codebase for A digital health assistant that helps young adults diagnosed with neurological disabilities, such as Autism and ADHD, prepare for social encounters when seeking health services. The goal of this application is to help these patient increase their independence, health outcomes, and overall quality of life.
 
 ## Key Features:
+
 1. **Interactive Task Creation:** Users can engage with our chat interface to add task to their schedule such as visiting the doctor and picking up a prescription. The chatbot guides the user through task creation using a checklist. Their responses are saved and appended to their tasks.
-   
 2. **Conversation Practice Modules:** A voice feature allows users to practice oral communication skills by interacting with the app using spoken language. This module includes scenarios for scheduling appointments, checking in at the doctor’s office, attending a virtual visit, and more..
 
 3. **Scenario-Based Learning:** Users can access a wide array of videos and interactive exercises aimed at helping them develop practical skills for independently navigating everyday situations.
 
 4. **Domain-Specific Personalization:** Leveraging machine learning techniques like Retrieval-Augmented Generation (RAG), the app offers improved information retrieval and neuro-sensitive natural language generation, ensuring more accurate and personalized assistance.
+
+## Running The Project:
+
+You need to make sure you have npm and python installed.
+Now first, you gotta run the Django backend, to do this execute these commands (optional but better, do the steps in a virtual environment):
+`cd backend`
+`pip install -r requirements. txt`
+`python manage.py migrate`
+`python manage.py runserver`
+
+Now Django is running!
+However, you still need to run React, to do this, execute these commands in another window:
+`cd..` -- This is to go back to the main directory, if you are in the backend directory
+`cd frontend`
+`cd hackathon-app`
+`npm i`
+`npm run dev`
+
+And that's it, now you have both Django and React running!
+Go to the local url that appears in the window after running React to access the website
+
+**Note: Make sure Django and React are running on different ports!**
