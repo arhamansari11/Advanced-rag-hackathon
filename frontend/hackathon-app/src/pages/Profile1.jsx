@@ -32,7 +32,7 @@ const Profile1 = () => {
             >
               All About You:
             </h3>
-            <div className="col-4">
+            <div className="col-lg-4 col-md-6 col-sm-7 col-11">
               <form>
                 <div className="mb-3">
                   <label className="form-label">Name:</label>

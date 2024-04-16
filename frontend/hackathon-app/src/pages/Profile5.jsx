@@ -23,67 +23,65 @@ const Profile5 = () => {
                 className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center"
                 style={{
                   border: "1px solid",
-                  backgroundColor: "#31828F",
+                  backgroundColor: "#F1822F",
                   color: "white",
                   cursor: "pointer",
                   height: "150px",
                 }}
               >
-                <p className="text-center">Autism</p>
+                <p className="text-center">Anxious</p>
               </div>
               <div
                 className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center"
                 style={{
                   border: "1px solid",
-                  backgroundColor: "#31828F",
+                  backgroundColor: "#F1822F",
                   color: "white",
                   cursor: "pointer",
                   height: "150px",
                 }}
               >
-                <p className="text-center">ADHD</p>
+                <p className="text-center">Excited</p>
               </div>
               <div
                 className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center"
                 style={{
                   border: "1px solid",
-                  backgroundColor: "#31828F",
+                  backgroundColor: "#F1822F",
                   color: "white",
                   cursor: "pointer",
                   height: "150px",
                 }}
               >
-                <p className="text-center">Dyslexia</p>
+                <p className="text-center">Overwhelmed</p>
               </div>
               <div
                 className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center"
                 style={{
                   border: "1px solid",
-                  backgroundColor: "#31828F",
+                  backgroundColor: "#F1822F",
                   color: "white",
                   cursor: "pointer",
                   height: "150px",
                 }}
               >
-                <p className="text-center">Other</p>
+                <p className="text-center">WithDrawn</p>
               </div>
             </div>
             <h4 className="text-center mt-3">
-              Which Group do you identify with?
+              I feel ____ when meeting new people.
             </h4>
 
-            <div className="text-center"> {/* Modified line */}
-              <Link to="/profile3">
+            <div className="text-center mt-3"> {/* Modified line */}
+              <Link to="/profile4">
                 <button className="btn btn-primary mb-2">
                   Previous Page
                 </button>
               </Link>
               <br />
-              <Link to="/profile5">
                 <button className="btn btn-primary mb-2">
-                  Next Page
+                  Submit  
                 </button>
-              </Link>
             </div>
           </div>
         </div>

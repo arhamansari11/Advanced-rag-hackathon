@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import img1 from "../assets/images/1.jpg";
+import img2 from "../assets/images/2.jpg";
+import img3 from "../assets/images/3.jpg";
+import img4 from "../assets/images/4.jpg";
 
 const Profile4 = () => {
   return (
@@ -18,71 +22,87 @@ const Profile4 = () => {
             >
               Profile Setup
             </h1>
-            <div className="row d-flex justify-content-center"> {/* Modified line */}
+            <div className="row d-flex justify-content-center">
               <div
-                className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center"
+                className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center card"
                 style={{
-                  border: "1px solid",
-                  backgroundColor: "#31828F",
+                  border: "1px solid black",
                   color: "white",
                   cursor: "pointer",
-                  height: "150px",
+                  width: "18rem",
+                  overflow: "hidden",
                 }}
               >
-                <p className="text-center">Autism</p>
+                <img
+                  src={img1}
+                  alt="Image1"
+                  style={{ width: "110%", height: "100%", objectFit: "cover" }}
+                />
               </div>
               <div
-                className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center"
+                className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center card ms-2"
                 style={{
-                  border: "1px solid",
-                  backgroundColor: "#31828F",
+                  border: "1px solid black",
+                  
                   color: "white",
                   cursor: "pointer",
-                  height: "150px",
+
+                  width: "18rem",
+                  overflow: "hidden",
                 }}
               >
-                <p className="text-center">ADHD</p>
+                <img
+                  src={img2}
+                  alt="Image1"
+                  style={{ width: "110%", height: "100%", objectFit: "cover" }}
+                />
               </div>
               <div
-                className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center"
+                className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center card mt-3"
                 style={{
-                  border: "1px solid",
-                  backgroundColor: "#31828F",
+                  border: "1px solid black",
+                  
                   color: "white",
                   cursor: "pointer",
-                  height: "150px",
+
+                  width: "18rem",
+                  overflow: "hidden",
                 }}
               >
-                <p className="text-center">Dyslexia</p>
+                <img
+                  src={img3}
+                  alt="Image1"
+                  style={{ width: "110%", height: "100%", objectFit: "cover" }}
+                />
               </div>
               <div
-                className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center"
+                className="col-lg-6 col-md-6 col-sm-6 col-12 d-flex justify-content-center align-items-center ms-3 card mt-3"
                 style={{
-                  border: "1px solid",
-                  backgroundColor: "#31828F",
+                  border: "1px solid black",
+                  
                   color: "white",
-                  cursor: "pointer",
-                  height: "150px",
+
+                  width: "18rem",
+                  overflow: "hidden",
                 }}
               >
-                <p className="text-center">Other</p>
+                <img
+                  src={img4}
+                  alt="Image1"
+                  style={{ width: "110%", height: "100%", objectFit: "cover" }}
+                />
               </div>
             </div>
-            <h4 className="text-center mt-3">
-              Which Group do you identify with?
-            </h4>
 
-            <div className="text-center"> {/* Modified line */}
+            <div className="text-center mt-3">
+              {" "}
+              {/* Modified line */}
               <Link to="/profile3">
-                <button className="btn btn-primary mb-2">
-                  Previous Page
-                </button>
+                <button className="btn btn-primary mb-2">Previous Page</button>
               </Link>
               <br />
               <Link to="/profile5">
-                <button className="btn btn-primary mb-2">
-                  Next Page
-                </button>
+                <button className="btn btn-primary mb-2">Next Page</button>
               </Link>
             </div>
           </div>
