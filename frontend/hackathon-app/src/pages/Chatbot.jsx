@@ -53,7 +53,7 @@ const Chatbot = () => {
       <div className="chatbot-input">
         <input
           type="text"
-          placeholder="Type your message..."
+          placeholder="Type your message.."
           value={input}
           onChange={handleInputChange}
           onKeyPress={handleKeyPress}
