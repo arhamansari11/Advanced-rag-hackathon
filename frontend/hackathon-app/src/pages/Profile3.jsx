@@ -72,16 +72,16 @@ const Profile3 = () => {
               Which Group do you identify with?
             </h4>
 
-            <div className="text-center"> {/* Modified line */}
+            <div className="d-flex justify-content-between"> {/* Modified line */}
               <Link to="/profile2">
                 <button className="btn btn-primary mb-2">
-                  Previous Page
+                  Previous 
                 </button>
               </Link>
               <br />
               <Link to="/profile4">
                 <button className="btn btn-primary mb-2">
-                  Next Page
+                  Next 
                 </button>
               </Link>
             </div>

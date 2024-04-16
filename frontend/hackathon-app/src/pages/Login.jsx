@@ -57,7 +57,7 @@ function Login() {
               fontFamily: "sans-serif"
             }}
           >
-            Equa Care
+            EquaCare
           </h1>
           <div className="mb-2 d-flex justify-content-center">
             <img

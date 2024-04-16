@@ -11,6 +11,7 @@ import Profile3 from "../pages/Profile3.jsx";
 import Profile4 from "../pages/Profile4.jsx";
 import Profile5 from "../pages/Profile5.jsx";
 import HomeScreen from "../pages/HomeScreen.jsx";
+import Chatbot from "../pages/Chatbot.jsx"
 
 function Routing() {
   return (
@@ -26,6 +27,7 @@ function Routing() {
           <Route path="/profile3" element={<Profile3 />} />
           <Route path="/profile4" element={<Profile4 />} />
           <Route path="/profile5" element={<Profile5 />} />
+          <Route path="/chat" element={<Chatbot />} />
           <Route path="/landingpage" element={<HomeScreen />} />
           <Route path="*" element={<Error />} />
         </Route>

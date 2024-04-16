@@ -20,7 +20,7 @@ const Profile2 = () => {
             </h1>
 
             <h1
-              className="text-center my-4"
+              className="text-center "
               style={{
                 fontWeight: "bold",
                 color: "#27BCBB",
@@ -80,16 +80,15 @@ const Profile2 = () => {
                   />
                 </div>
               </form>
-              <div className="text-center"> {/* Changed here */}
+              <div className="d-flex justify-content-between"> {/* Changed here */}
                 <Link to="/profile1">
                   <button className="btn btn-primary mb-2">
-                    Previous Page
+                    Previous 
                   </button>
                 </Link>
-                <br />
                 <Link to="/profile3">
                   <button className="btn btn-primary mb-2 ml-2">
-                    Next Page
+                    Next 
                   </button>
                 </Link>
               </div>

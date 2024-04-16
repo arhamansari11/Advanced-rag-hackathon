@@ -8,7 +8,7 @@ const Forgotpassword = () => {
     <div className="col-lg-4 col-md-6 col-sm-8">
       <form>
         <h1 className="text-center mb-4" style={{ fontWeight: "bold" , color : "#27BCBB" , fontSize : "20px" , fontFamily : "sans-serif"}}>
-          Equa Care
+          EquaCare
         </h1>
       <div className="mb-2 d-flex justify-content-center">
       <img src={Logo} className="Logo" alt="Logo" style={{width : "60px"}}/>

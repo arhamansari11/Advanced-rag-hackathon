@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-12 d-flex flex-column align-items-center"> {/* Changed flexbox class */}
+        <div className="col-12 d-flex flex-column align-items-center"> 
           <h1
             className="my-4"
             style={{
