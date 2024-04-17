@@ -7,7 +7,8 @@ class Appointment(models.Model):
     # TODO: Make a model for doctors and link it here (after the hackathon)
     scheduled_at = models.DateTimeField(auto_now_add=True, blank=True, null=True)
     doctor = models.CharField(max_length=150, null=True, blank=True)
-    time = models.DateTimeField(blank=True, null=True)
+    user_profile = models.ForeignKey('UserProfile', on_delete=models.CASCADE, null=True, blank=True, related_name="appointments_made")
+    datetime = models.DateTimeField(blank=True, null=True)
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -18,7 +19,6 @@ class UserProfile(models.Model):
     diagnosis = models.TextField(max_length=999, null=True, blank= True)
     # TODO: Add a background task to delete the chat log once a while or when it reaches the max length (after the hackathon)
     chat_log = models.TextField(max_length=99999, null=True, blank=True)
-    appointments = models.ManyToManyField(Appointment)
 
     @property
     def full_name(self):

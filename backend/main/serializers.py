@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
-from .models import UserProfile
+from .models import *
 
 class UserProfileSerializer(serializers.ModelSerializer):
     class Meta:
@@ -9,7 +9,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
 
 
     def create(self, validated_data):
-        userProfile = UserProfile.objects.create_user(**validated_data)
+        userProfile = UserProfile.objects.create(**validated_data)
         return userProfile
 
 class UserSerializer(serializers.ModelSerializer):
@@ -20,3 +20,7 @@ class UserSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user = User.objects.create_user(**validated_data)
         return user
+
+class AppointmentSerializer(serializers.Serializer):
+    datetime = serializers.DateTimeField(required=True)
+    doctor = serializers.CharField(required=True)

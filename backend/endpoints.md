@@ -39,3 +39,20 @@ Logs the user with the username and password in
 ##### Returns:
 
 - a CSRF token (str)
+
+### api/set-appointment _(POST)_
+
+##### Expects:
+
+- datetime: a datetime string in ISO-8601 format (YYYY-MM-DDTHH:mm:ss.sssZ)
+- doctor: a string (subject to change in the future)
+
+##### Returns:
+
+- a success boolean
+
+### api/get-user-data _(GET)_
+
+##### Returns:
+
+- Most data of the authenticated user (id, user.id, first_name, last_name, email, disability, diagnosis, chat_log, appointments_made), if the user is not authorized a 401 status response is returned

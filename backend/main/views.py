@@ -2,6 +2,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from django.contrib.auth import authenticate, login
+from django.forms.models import model_to_dict
 from django.middleware.csrf import get_token
 from django.contrib.auth.models import User
 from .models import UserProfile
@@ -49,3 +50,26 @@ def signup(request):
 def get_csrf_token(request):
     csrf_token = get_token(request)
     return Response({"csrfToken": csrf_token})
+
+@api_view(['GET'])
+def get_user_data(request):
+    if request.method == "GET":
+        if request.user.is_authenticated:
+            userprofile = request.user.userprofile
+            userprofile_data = model_to_dict(userprofile)
+            userprofile_data["appointments_made"] = [model_to_dict(appointment) for appointment in userprofile.appointments_made.all()]
+            return Response(userprofile_data, status=status.HTTP_200_OK)
+        return Response({"error": "Unauthorized (User is not logged in)"}, status=status.HTTP_401_UNAUTHORIZED)
+
+@api_view(['POST'])
+def set_appointment(request):
+    if request.method == "POST":
+        serializer = AppointmentSerializer(data=request.data)
+        if serializer.is_valid():
+            if request.user.is_authenticated:
+                datetime = serializer.validated_data.get("datetime")
+                doctor = serializer.validated_data.get("doctor")
+                Appointment.objects.create(datetime=datetime, doctor=doctor, user_profile=request.user.userprofile)
+                return Response({"success": True}, status=status.HTTP_201_CREATED)
+            return Response({"error": "Unauthorized (User is not logged in)"}, status=status.HTTP_401_UNAUTHORIZED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
