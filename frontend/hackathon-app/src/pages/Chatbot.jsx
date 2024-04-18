@@ -9,7 +9,7 @@ export const Chatbot = () => (
           <h1
             style={{ color: "#156082", fontWeight: "bold", fontSize: "40px" }}
           >
-            Equa Care
+            EquaCare
           </h1>
           <p style={{ fontSize: "20px" }}>
             Providing equal access to healthcare for patients who find social
@@ -24,7 +24,7 @@ export const Chatbot = () => (
       corpusIds={["3"]}
       apiKey="zut_AcXkxxBdbcnL8hVb7n9sSK2ZDdjxFk6ukQsCvg"
       title="Chat with EquaCare"
-      placeholder='Type your Questions?"'
+      placeholder='Type your Queries?"'
       inputSize="large"
       enableStreaming={true}
       language="eng"
