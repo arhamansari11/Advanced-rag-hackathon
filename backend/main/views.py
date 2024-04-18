@@ -73,3 +73,36 @@ def set_appointment(request):
                 return Response({"success": True}, status=status.HTTP_201_CREATED)
             return Response({"error": "Unauthorized (User is not logged in)"}, status=status.HTTP_401_UNAUTHORIZED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['POST'])
+def add_to_chat_log(request):
+    if request.method == "POST":
+        if request.user.is_authenticated:
+            userprofile = request.user.userprofile
+            if request.POST.get("log"):
+                userprofile.chat_log = userprofile.chat_log + request.POST.get("log")
+                return Response({"success": True}, status=status.HTTP_200_OK)
+            return Response({"error": "`log` is not found in the request"}, status=status.HTTP_400_BAD_REQUEST)
+        return Response({"error": "Unauthorized (User is not logged in)"}, status=status.HTTP_401_UNAUTHORIZED)
+    
+@api_view(['POST'])
+def set_diagnosis(request):
+    if request.method == "POST":
+        if request.user.is_authenticated:
+            userprofile = request.user.userprofile
+            if request.POST.get("diagnosis"):
+                userprofile.diagnosis = request.POST.get("diagnosis")
+                return Response({"success": True}, status=status.HTTP_200_OK)
+            return Response({"error": "`diagnosis` is not found in the request"}, status=status.HTTP_400_BAD_REQUEST)
+        return Response({"error": "Unauthorized (User is not logged in)"}, status=status.HTTP_401_UNAUTHORIZED)
+    
+@api_view(['POST'])
+def set_disability(request):
+    if request.method == "POST":
+        if request.user.is_authenticated:
+            userprofile = request.user.userprofile
+            if request.POST.get("disability"):
+                userprofile.disability = request.POST.get("disability")
+                return Response({"success": True}, status=status.HTTP_200_OK)
+            return Response({"error": "`disability` is not found in the request"}, status=status.HTTP_400_BAD_REQUEST)
+        return Response({"error": "Unauthorized (User is not logged in)"}, status=status.HTTP_401_UNAUTHORIZED)
