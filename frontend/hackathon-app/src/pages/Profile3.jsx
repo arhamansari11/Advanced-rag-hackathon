@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const Profile3 = () => {
   return (
     <>
+    <Navbar/>
       <div className="container-fluid">
         <div className="row">
           <div className="col-7 mx-auto ">

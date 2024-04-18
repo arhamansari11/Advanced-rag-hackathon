@@ -4,10 +4,12 @@ import img1 from "../assets/images/1.jpg";
 import img2 from "../assets/images/2.jpg";
 import img3 from "../assets/images/3.jpg";
 import img4 from "../assets/images/4.jpg";
+import Navbar from "../components/Navbar";
 
 const Profile4 = () => {
   return (
     <>
+    <Navbar/>
       <div className="container-fluid">
         <div className="row">
           <div className="col-7 mx-auto ">
@@ -93,17 +95,20 @@ const Profile4 = () => {
                 />
               </div>
             </div>
-
-            <div className="text-center mt-3">
-              {" "}
-              {/* Modified line */}
+            <div className="col-5 mx-auto mt-5">
+            <div className="d-flex justify-content-between"> {/* Modified line */}
               <Link to="/profile3">
-                <button className="btn btn-primary mb-2">Previous Page</button>
+                <button className="btn btn-primary mb-2">
+                  Previous 
+                </button>
               </Link>
               <br />
               <Link to="/profile5">
-                <button className="btn btn-primary mb-2">Next Page</button>
+                <button className="btn btn-primary mb-2">
+                  Next 
+                </button>
               </Link>
+            </div>
             </div>
           </div>
         </div>

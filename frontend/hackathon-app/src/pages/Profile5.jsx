@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const Profile5 = () => {
   return (
     <>
+    <Navbar/>
       <div className="container-fluid">
         <div className="row">
           <div className="col-7 mx-auto ">
@@ -71,17 +73,17 @@ const Profile5 = () => {
             <h4 className="text-center mt-3">
               I feel ____ when meeting new people.
             </h4>
-
-            <div className="text-center mt-3"> {/* Modified line */}
+            <div className="d-flex justify-content-between"> {/* Modified line */}
               <Link to="/profile4">
                 <button className="btn btn-primary mb-2">
-                  Previous Page
+                  Previous 
                 </button>
               </Link>
               <br />
                 <button className="btn btn-primary mb-2">
-                  Submit  
+                  Submit
                 </button>
+              
             </div>
           </div>
         </div>

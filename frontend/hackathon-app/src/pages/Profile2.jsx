@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const Profile2 = () => {
   return (
     <>
+    <Navbar/>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 d-flex flex-column align-items-center">

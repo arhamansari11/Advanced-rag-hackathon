@@ -2,10 +2,12 @@ import React from "react";
 import P1image from "../assets/images/healthcare_assistant_standing.png";
 import "../styles/Home.css";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 const Profile1 = () => {
   return (
     <>
+    <Navbar/>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12 d-flex flex-column align-items-center">
