@@ -12,6 +12,7 @@ import Profile4 from "../pages/Profile4.jsx";
 import Profile5 from "../pages/Profile5.jsx";
 import HomeScreen from "../pages/HomeScreen.jsx";
 import Chatbot from "../pages/Chatbot.jsx"
+import Custom from "../components/Custom.jsx"
 
 function Routing() {
   return (
@@ -29,6 +30,7 @@ function Routing() {
           <Route path="/profile5" element={<Profile5 />} />
           <Route path="/chat" element={<Chatbot />} />
           <Route path="/landingpage" element={<HomeScreen />} />
+          <Route path="/custom" element={<Custom />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
