@@ -38,7 +38,7 @@ const Home = () => {
                 during, and after each visit for patients with Autism.
               </p>
             </div>
-            <Link to="/login">
+            <Link to="/chat">
               <button className="btn btn-primary mb-2">Start</button>
             </Link>
           </div>
