@@ -5,7 +5,7 @@ const Card = () => {
     "Find a doctor",
     "Help with a medical question",
     "Help with a prescription",
-    "Explain my benefits",
+    "Explain my benefits?",
   ];
 
   return (
