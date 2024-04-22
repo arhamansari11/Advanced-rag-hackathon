@@ -7,7 +7,7 @@ import userProfile from "../assets/images/user.jpg";
 const promptsArray = [
   "Enter your event name",
   "Enter your event description",
-  "Enter Your event goal",
+  "Enter Your event goal now",
 ];
 
 const eventsDetail = {
